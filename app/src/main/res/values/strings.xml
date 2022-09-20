@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DemmoKepkiApp</string>
+    <string name="xl">XL</string>
+    <string name="L">L</string>
+    <string name="M">M</string>
+    <string name="S">S</string>
+</resources>
