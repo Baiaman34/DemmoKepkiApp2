@@ -1,6 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/blue_cap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:src="@drawable/blue_cap"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/_adidas"
+        android:text="Adidas"
+        android:layout_marginVertical="18dp"
+        android:layout_marginHorizontal="12dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/blue_cap"
+        app:layout_constraintBottom_toBottomOf="@id/blue_cap"/>
+
+    <TextView
+        android:id="@+id/_name_pro"
+        android:text="San Francisco Baseball"
+        android:textColor="@color/grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/_3800"
+        app:layout_constraintStart_toStartOf="@id/_3800"
+        app:layout_constraintBottom_toBottomOf="@id/blue_cap"/>
+
+    <TextView
+        android:id="@+id/_3800"
+        android:text="3800 сом"
+        android:layout_marginVertical="2dp"
+        android:layout_marginHorizontal="4dp"
+        android:textSize="@dimen/twenty_two_sp"
+        android:textColor="@color/yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/_adidas"
+        app:layout_constraintTop_toBottomOf="@id/_name_pro"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
